@@ -1,1559 +1,2377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-            <title>Documentation</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="../">
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
-                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
-        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="js/search.js"></script>
-        <script defer src="js/searchIndex.js"></script>
-    </head>
-<body id="top">
-    <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
-    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
-    <label class="phpdocumentor-header__menu-icon" for="menu-button">
-        <i class="fas fa-bars"></i>
-    </label>
-    <section data-search-form class="phpdocumentor-search">
-    <label>
-        <span class="visually-hidden">Search for</span>
-        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
-        </svg>
-        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-    </label>
-</section>
+  <head>
+    <meta charset="utf-8" />
+    <title>Textfield - Formify 1.0.0</title>
 
-    <nav class="phpdocumentor-topnav">
-    <ul class="phpdocumentor-topnav__menu">
-        </ul>
-</nav>
-</header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+      integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="js/search.js"></script>
+    <script defer src="js/searchIndex.js"></script>
+  </head>
+  <body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+      <h1 class="phpdocumentor-title">
+        <a href="index.html" class="phpdocumentor-title__link">Formify</a>
+      </h1>
+      <input
+        class="phpdocumentor-header__menu-button"
+        type="checkbox"
+        id="menu-button"
+        name="menu-button"
+      />
+      <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+      </label>
+      <section data-search-form class="phpdocumentor-search">
+        <label>
+          <span class="visually-hidden">Search for</span>
+          <svg
+            class="phpdocumentor-search__icon"
+            width="21"
+            height="20"
+            viewBox="0 0 21 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="7.5"
+              cy="7.5"
+              r="6.5"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <line
+              x1="12.4892"
+              y1="12.2727"
+              x2="19.1559"
+              y2="18.9393"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+          </svg>
+          <input
+            type="search"
+            class="phpdocumentor-field phpdocumentor-search__field"
+            placeholder="Loading .."
+            disabled
+          />
+        </label>
+      </section>
+
+      <nav class="phpdocumentor-topnav">
+        <ul class="phpdocumentor-topnav__menu"></ul>
+      </nav>
+    </header>
 
     <main class="phpdocumentor">
-        <div class="phpdocumentor-section">
-            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
-<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
-    Menu
-</label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
-            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/app.html" class="">App</a>
-</h4>
-    <ul class="phpdocumentor-list">
-                    <li>
-                <a href="namespaces/app-libraries.html" class="">Libraries</a>
-                
-            </li>
-            </ul>
-
-                        </section>
-                <section class="phpdocumentor-sidebar__category">
+      <div class="phpdocumentor-section">
+        <input
+          class="phpdocumentor-sidebar__menu-button"
+          type="checkbox"
+          id="sidebar-button"
+          name="sidebar-button"
+        />
+        <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+          Menu
+        </label>
+        <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+          <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/Application.html" class="">Application</a>
-</h4>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/Formify.html" class="">Formify</a>
-</h4>
-    <ul class="phpdocumentor-list">
-                    <li>
+            <h4 class="phpdocumentor-sidebar__root-namespace">
+              <a href="packages/Formify.html" class="">Formify</a>
+            </h4>
+            <ul class="phpdocumentor-list">
+              <li>
                 <a href="packages/Formify-Inputs.html" class="">Inputs</a>
-                
-            </li>
+              </li>
             </ul>
-
-                        </section>
-            
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
-                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
-    </section>
-
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
-        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
-    </section>
-</aside>
-
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app.html">App</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app-libraries.html">Libraries</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app-libraries-formify.html">Formify</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app-libraries-formify-inputs.html">Inputs</a></li>
-    </ul>
-
-    <article class="phpdocumentor-element -class">
-        <h2 class="phpdocumentor-content__title">
-    TextField
-
-        <span class="phpdocumentor-element__extends">
-        extends <a href="classes/App-Libraries-Formify-Inputs-Input.html"><abbr title="\App\Libraries\Formify\Inputs\Input">Input</abbr></a>
-    </span>
-    
-            <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Formify.html">Formify</a></li>
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Formify-Inputs.html">Inputs</a></li>
-                            </ul>
-        </div>
-    
-    
-    </h2>
-
-        <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/TextField.php"><a href="files/formify-inputs-textfield.html"><abbr title="Formify/Inputs/TextField.php">TextField.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">14</span>
-
-    </aside>
-
-            <p class="phpdocumentor-summary">Represents a standard Input object</p>
-
-    <section class="phpdocumentor-description"><p>Can be used for a variety of input elements such as:</p>
-<p>text, date, email, password, number, search etc</p>
-</section>
-
-
-
-
-
-
-
-
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_data">$data</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_description">$description</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_description_class">$description_class</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_horizontal">$horizontal</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_label">$label</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_class">$label_class</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_width">$label_width</a>
-    <span>
-                        &nbsp;: int            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_name">$name</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_tooltip">$tooltip</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_wrapper_tag">$wrapper_tag</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/App-Libraries-Formify-Inputs-TextField.html#property_floating_label">$floating_label</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd></dd>
-
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-TextField.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Constructor for Textfield object</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_addClass">addClass()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Adds class to input element</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-TextField.html#method_generate">generate()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Generates a standard input HTML</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_getData">getData()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Returns data array of input element</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_getName">getName()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Returns name Attribute of input element HTML</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescription">setDescription()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of description</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescriptionClass">setDescriptionClass()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of description_class</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-TextField.html#method_setFloatingLabel">setFloatingLabel()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of floating_label</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabel">setLabel()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of label</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelClass">setLabelClass()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of label_class</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelWidth">setLabelWidth()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of label_width</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setName">setName()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of name</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setTooltip">setTooltip()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Set the value of tooltip</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setValue">setValue()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Sets value of input element HTML</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_getTooltipHtml">getTooltipHtml()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Gets tooltip HTML according to $tooltip array</dd>
-
-        </dl>
-
-
-
-        
-
-        
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/App-Libraries-Formify-Inputs-TextField.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_data">
-        $data
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_data" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">15</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$data</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Array of data for input element</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_description">
-        $description
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_description" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$description</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Description of input element to be displayed</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_description_class">
-        $description_class
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_description_class" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">55</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$description_class</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Class of description HTML</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_horizontal">
-        $horizontal
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_horizontal" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$horizontal</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>True if label and input is inline</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_label">
-        $label
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$label</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Label of input element to be displayed</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_label_class">
-        $label_class
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_class" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$label_class</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Class of input element label</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_label_width">
-        $label_width
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_width" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$label_width</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Number of columns label occupy (1 - 12)</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_name">
-        $name
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_name" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">20</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$name</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Name attribute of input element, or array of names for checkboxes and table Input</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_tooltip">
-        $tooltip
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_tooltip" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">68</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$tooltip</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Array representing a tooltip</p>
-<p>$tooltip['title'] Text to display</p>
-<p>$tooltip['custom-class'] Any class to add to tooltip</p>
-<p>$tooltip['placement'] Tooltip placement direction (top, right, bottom, left)</p>
-<p>For other options see https://getbootstrap.com/docs/5.3/components/tooltips/#options</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_wrapper_tag">
-        $wrapper_tag
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#property_wrapper_tag" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">45</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$wrapper_tag</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Wrapper HTML of input element, label and description</p>
-</section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_floating_label">
-        $floating_label
-        <a href="classes/App-Libraries-Formify-Inputs-TextField.html#property_floating_label" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/TextField.php"><a href="files/formify-inputs-textfield.html"><abbr title="Formify/Inputs/TextField.php">TextField.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">19</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$floating_label</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"><p>Enable floating label</p>
-</section>
-
-    
-
-</article>
+          </section>
+
+          <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+            <h3 class="phpdocumentor-sidebar__root-package">
+              <a href="indices/files.html">Files</a>
+            </h3>
+          </section>
+        </aside>
+
+        <div class="phpdocumentor-column -eight phpdocumentor-content">
+          <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb">
+              <a href="packages/Formify.html">Formify</a>
+            </li>
+            <li class="phpdocumentor-breadcrumb">
+              <a href="packages/Formify-Inputs.html">Inputs</a>
+            </li>
+          </ul>
+
+          <article class="phpdocumentor-element -class">
+            <h2 class="phpdocumentor-content__title">
+              TextField
+
+              <span class="phpdocumentor-element__extends">
+                extends
+                <a href="classes/App-Libraries-Formify-Inputs-Input.html"
+                  ><abbr title="\App\Libraries\Formify\Inputs\Input"
+                    >Input</abbr
+                  ></a
+                >
+              </span>
+
+              <div class="phpdocumentor-element__package">
+                in package
+                <ul class="phpdocumentor-breadcrumbs">
+                  <li class="phpdocumentor-breadcrumb">
+                    <a href="packages/Formify.html">Formify</a>
+                  </li>
+                  <li class="phpdocumentor-breadcrumb">
+                    <a href="packages/Formify-Inputs.html">Inputs</a>
+                  </li>
+                </ul>
+              </div>
+            </h2>
+
+            <aside class="phpdocumentor-element-found-in">
+              <abbr
+                class="phpdocumentor-element-found-in__file"
+                title="Formify/Inputs/TextField.php"
+                ><a href="files/formify-inputs-textfield.html"
+                  ><abbr title="Formify/Inputs/TextField.php"
+                    >TextField.php</abbr
+                  ></a
+                ></abbr
+              >
+              :
+              <span class="phpdocumentor-element-found-in__line">14</span>
+            </aside>
+
+            <p class="phpdocumentor-summary">
+              Represents a standard Input object
+            </p>
+
+            <section class="phpdocumentor-description">
+              <p>Can be used for a variety of input elements such as:</p>
+              <p>text, date, email, password, number, search etc</p>
+            </section>
+
+            <h3 id="toc">
+              Table of Contents
+              <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+
+            <dl class="phpdocumentor-table-of-contents">
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_data"
+                  >$data</a
+                >
+                <span> &nbsp;: array&lt;string|int, mixed&gt; </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_description"
+                  >$description</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_description_class"
+                  >$description_class</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_horizontal"
+                  >$horizontal</a
+                >
+                <span> &nbsp;: bool </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_label"
+                  >$label</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_class"
+                  >$label_class</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_width"
+                  >$label_width</a
+                >
+                <span> &nbsp;: int </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_name"
+                  >$name</a
+                >
+                <span> &nbsp;: mixed </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_tooltip"
+                  >$tooltip</a
+                >
+                <span> &nbsp;: array&lt;string|int, mixed&gt; </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#property_wrapper_tag"
+                  >$wrapper_tag</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -property -private"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-TextField.html#property_floating_label"
+                  >$floating_label</a
+                >
+                <span> &nbsp;: bool </span>
+              </dt>
+              <dd></dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-TextField.html#method___construct"
+                  >__construct()</a
+                >
+                <span> &nbsp;: mixed </span>
+              </dt>
+              <dd>Constructor for Textfield object</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_addClass"
+                  >addClass()</a
+                >
+                <span> &nbsp;: void </span>
+              </dt>
+              <dd>Adds class to input element</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-TextField.html#method_generate"
+                  >generate()</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd>Generates a standard input HTML</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_getData"
+                  >getData()</a
+                >
+                <span> &nbsp;: array&lt;string|int, mixed&gt; </span>
+              </dt>
+              <dd>Returns data array of input element</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_getName"
+                  >getName()</a
+                >
+                <span> &nbsp;: mixed </span>
+              </dt>
+              <dd>Returns name Attribute of input element HTML</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescription"
+                  >setDescription()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of description</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescriptionClass"
+                  >setDescriptionClass()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of description_class</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-TextField.html#method_setFloatingLabel"
+                  >setFloatingLabel()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of floating_label</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabel"
+                  >setLabel()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of label</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelClass"
+                  >setLabelClass()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of label_class</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelWidth"
+                  >setLabelWidth()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of label_width</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setName"
+                  >setName()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of name</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setTooltip"
+                  >setTooltip()</a
+                >
+                <span> &nbsp;: self </span>
+              </dt>
+              <dd>Set the value of tooltip</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -public"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_setValue"
+                  >setValue()</a
+                >
+                <span> &nbsp;: void </span>
+              </dt>
+              <dd>Sets value of input element HTML</dd>
+
+              <dt
+                class="phpdocumentor-table-of-contents__entry -method -protected"
+              >
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-Input.html#method_getTooltipHtml"
+                  >getTooltipHtml()</a
+                >
+                <span> &nbsp;: string </span>
+              </dt>
+              <dd>Gets tooltip HTML according to $tooltip array</dd>
+            </dl>
+
+            <section class="phpdocumentor-properties">
+              <h3 class="phpdocumentor-elements__header" id="properties">
+                Properties
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-TextField.html#properties"
+                  class="headerlink"
+                  ><i class="fas fa-link"></i
+                ></a>
+              </h3>
+              <article class="phpdocumentor-element -property -protected">
+                <h4 class="phpdocumentor-element__name" id="property_data">
+                  $data
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_data"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">15</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type"
+                    >array&lt;string|int, mixed&gt;</span
+                  >
+                  <span class="phpdocumentor-signature__name">$data</span>
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Array of data for input element</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_description"
+                >
+                  $description
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_description"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">30</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">string</span>
+                  <span class="phpdocumentor-signature__name"
+                    >$description</span
+                  >
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Description of input element to be displayed</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_description_class"
+                >
+                  $description_class
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_description_class"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">55</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">string</span>
+                  <span class="phpdocumentor-signature__name"
+                    >$description_class</span
+                  >
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Class of description HTML</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_horizontal"
+                >
+                  $horizontal
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_horizontal"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">35</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">bool</span>
+                  <span class="phpdocumentor-signature__name">$horizontal</span>
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>True if label and input is inline</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4 class="phpdocumentor-element__name" id="property_label">
+                  $label
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_label"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">25</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">string</span>
+                  <span class="phpdocumentor-signature__name">$label</span>
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Label of input element to be displayed</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_label_class"
+                >
+                  $label_class
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_class"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">50</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">string</span>
+                  <span class="phpdocumentor-signature__name"
+                    >$label_class</span
+                  >
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Class of input element label</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_label_width"
+                >
+                  $label_width
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_label_width"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">40</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">int</span>
+                  <span class="phpdocumentor-signature__name"
+                    >$label_width</span
+                  >
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Number of columns label occupy (1 - 12)</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4 class="phpdocumentor-element__name" id="property_name">
+                  $name
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_name"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">20</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">mixed</span>
+                  <span class="phpdocumentor-signature__name">$name</span>
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>
+                    Name attribute of input element, or array of names for
+                    checkboxes and table Input
+                  </p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4 class="phpdocumentor-element__name" id="property_tooltip">
+                  $tooltip
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_tooltip"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">68</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type"
+                    >array&lt;string|int, mixed&gt;</span
+                  >
+                  <span class="phpdocumentor-signature__name">$tooltip</span>
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Array representing a tooltip</p>
+                  <p>$tooltip['title'] Text to display</p>
+                  <p>$tooltip['custom-class'] Any class to add to tooltip</p>
+                  <p>
+                    $tooltip['placement'] Tooltip placement direction (top,
+                    right, bottom, left)
+                  </p>
+                  <p>
+                    For other options see
+                    https://getbootstrap.com/docs/5.3/components/tooltips/#options
+                  </p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_wrapper_tag"
+                >
+                  $wrapper_tag
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#property_wrapper_tag"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">45</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__type">string</span>
+                  <span class="phpdocumentor-signature__name"
+                    >$wrapper_tag</span
+                  >
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Wrapper HTML of input element, label and description</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -property -private">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="property_floating_label"
+                >
+                  $floating_label
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-TextField.html#property_floating_label"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <span class="phpdocumentor-element__modifiers"> </span>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/TextField.php"
+                    ><a href="files/formify-inputs-textfield.html"
+                      ><abbr title="Formify/Inputs/TextField.php"
+                        >TextField.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">19</span>
+                </aside>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >private</span
+                  >
+                  <span class="phpdocumentor-signature__type">bool</span>
+                  <span class="phpdocumentor-signature__name"
+                    >$floating_label</span
+                  >
+                </code>
+
+                <section class="phpdocumentor-description">
+                  <p>Enable floating label</p>
+                </section>
+              </article>
             </section>
 
             <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/App-Libraries-Formify-Inputs-TextField.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/App-Libraries-Formify-Inputs-TextField.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/TextField.php"><a href="files/formify-inputs-textfield.html"><abbr title="Formify/Inputs/TextField.php">TextField.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Constructor for Textfield object</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$col_width</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">12</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$floating_label</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label_width</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label_class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description_class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$wrapper_id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tooltip</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Array of input data</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$label</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Label of input field to be displayed</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$description</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Description of input field to be displayed</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$col_width</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">12</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Number of columns input field occupy (1 - 12)</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$floating_label</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable floating label</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$label_width</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Number of columns input label (1 - 12)</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$class</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Class of input field HTML</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$label_class</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Class of input field label HTML</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$description_class</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Class of description HTML</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$wrapper_id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>ID of wrapper for input</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$tooltip</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Array representing a tooltip</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addClass">
-        addClass()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_addClass" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">152</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Adds class to input element</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$classname</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Class name to add to input</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_generate">
-        generate()
-        <a href="classes/App-Libraries-Formify-Inputs-TextField.html#method_generate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/TextField.php"><a href="files/formify-inputs-textfield.html"><abbr title="Formify/Inputs/TextField.php">TextField.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">64</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generates a standard input HTML</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">generate</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error_msg</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$error_msg</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Error message if input fails validation</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Standard input HTML</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getData">
-        getData()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_getData" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">130</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns data array of input element</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Data of element</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getName">
-        getName()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">120</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns name Attribute of input element HTML</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Name attribute of input element, or array of names for checkboxes and table Input</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setDescription">
-        setDescription()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescription" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">207</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of description</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setDescription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$description</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set description</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setDescriptionClass">
-        setDescriptionClass()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescriptionClass" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">243</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of description_class</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setDescriptionClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$description_class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$description_class</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set description_class</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setFloatingLabel">
-        setFloatingLabel()
-        <a href="classes/App-Libraries-Formify-Inputs-TextField.html#method_setFloatingLabel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/TextField.php"><a href="files/formify-inputs-textfield.html"><abbr title="Formify/Inputs/TextField.php">TextField.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">137</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of floating_label</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setFloatingLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$floating_label</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$floating_label</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set floating_label</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setLabel">
-        setLabel()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">195</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of label</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$label</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set label</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setLabelClass">
-        setLabelClass()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelClass" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">231</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of label_class</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLabelClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label_class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$label_class</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set label_class</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setLabelWidth">
-        setLabelWidth()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelWidth" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">219</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of label_width</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLabelWidth</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label_width</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$label_width</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set label_width</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setName">
-        setName()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">182</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of name</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set name</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setTooltip">
-        setTooltip()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setTooltip" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">255</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of tooltip</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setTooltip</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tooltip</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$tooltip</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Array representing a tooltip</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setValue">
-        setValue()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_setValue" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">141</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets value of input element HTML</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Value to set to input</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getTooltipHtml">
-        getTooltipHtml()
-        <a href="classes/App-Libraries-Formify-Inputs-Input.html#method_getTooltipHtml" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Formify/Inputs/Input.php"><a href="files/formify-inputs-input.html"><abbr title="Formify/Inputs/Input.php">Input.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">164</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Gets tooltip HTML according to $tooltip array</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getTooltipHtml</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>HTML of tooltip defined</p>
-</section>
-
-    
-</article>
+              <h3 class="phpdocumentor-elements__header" id="methods">
+                Methods
+                <a
+                  href="classes/App-Libraries-Formify-Inputs-TextField.html#methods"
+                  class="headerlink"
+                  ><i class="fas fa-link"></i
+                ></a>
+              </h3>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method___construct">
+                  __construct()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-TextField.html#method___construct"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/TextField.php"
+                    ><a href="files/formify-inputs-textfield.html"
+                      ><abbr title="Formify/Inputs/TextField.php"
+                        >TextField.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">36</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Constructor for Textfield object
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">__construct</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >array&lt;string|int, mixed&gt;&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$data</span
+                    ></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$label</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$description</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >int&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$col_width</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >12</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >bool&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$floating_label</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >false</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >int&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$label_width</span
+                    ></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$class</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$label_class</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$description_class</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$wrapper_id</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    ><span> ]</span></span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span><span>, </span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >array&lt;string|int, mixed&gt;&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$tooltip</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >[]</span
+                    ><span> ]</span></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >mixed</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$data</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >array&lt;string|int, mixed&gt;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Array of input data</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$label</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Label of input field to be displayed</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$description</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Description of input field to be displayed</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$col_width</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >int</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >12</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Number of columns input field occupy (1 - 12)</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$floating_label</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >bool</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >false</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Enable floating label</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$label_width</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >int</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Number of columns input label (1 - 12)</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$class</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Class of input field HTML</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$label_class</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Class of input field label HTML</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$description_class</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Class of description HTML</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$wrapper_id</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >&quot;&quot;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>ID of wrapper for input</p>
+                    </section>
+                  </dd>
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$tooltip</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >array&lt;string|int, mixed&gt;</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >[]</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Array representing a tooltip</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type"
+                  >mixed</span
+                >
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_addClass">
+                  addClass()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_addClass"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">152</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">Adds class to input element</p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">addClass</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$classname</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >void</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$classname</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Class name to add to input</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_generate">
+                  generate()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-TextField.html#method_generate"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/TextField.php"
+                    ><a href="files/formify-inputs-textfield.html"
+                      ><abbr title="Formify/Inputs/TextField.php"
+                        >TextField.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">64</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Generates a standard input HTML
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">generate</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span>[</span
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >mixed&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$error_msg</span
+                    ><span> = </span
+                    ><span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >null</span
+                    ><span> ]</span></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >string</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$error_msg</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >mixed</span
+                    >
+                    =
+                    <span
+                      class="phpdocumentor-signature__argument__default-value"
+                      >null</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Error message if input fails validation</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type"
+                  >string</span
+                >
+                &mdash;
+                <section class="phpdocumentor-description">
+                  <p>Standard input HTML</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_getData">
+                  getData()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_getData"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">130</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Returns data array of input element
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">getData</span
+                  ><span>(</span><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >array&lt;string|int, mixed&gt;</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type"
+                  >array&lt;string|int, mixed&gt;</span
+                >
+                &mdash;
+                <section class="phpdocumentor-description">
+                  <p>Data of element</p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_getName">
+                  getName()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_getName"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">120</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Returns name Attribute of input element HTML
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">getName</span
+                  ><span>(</span><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >mixed</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type"
+                  >mixed</span
+                >
+                &mdash;
+                <section class="phpdocumentor-description">
+                  <p>
+                    Name attribute of input element, or array of names for
+                    checkboxes and table Input
+                  </p>
+                </section>
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="method_setDescription"
+                >
+                  setDescription()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescription"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">207</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Set the value of description
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name"
+                    >setDescription</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$description</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$description</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set description</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="method_setDescriptionClass"
+                >
+                  setDescriptionClass()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setDescriptionClass"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">243</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Set the value of description_class
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name"
+                    >setDescriptionClass</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$description_class</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$description_class</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set description_class</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="method_setFloatingLabel"
+                >
+                  setFloatingLabel()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-TextField.html#method_setFloatingLabel"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/TextField.php"
+                    ><a href="files/formify-inputs-textfield.html"
+                      ><abbr title="Formify/Inputs/TextField.php"
+                        >TextField.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">137</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Set the value of floating_label
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name"
+                    >setFloatingLabel</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >bool&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$floating_label</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$floating_label</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >bool</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set floating_label</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_setLabel">
+                  setLabel()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabel"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">195</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">Set the value of label</p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">setLabel</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$label</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$label</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set label</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="method_setLabelClass"
+                >
+                  setLabelClass()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelClass"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">231</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Set the value of label_class
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name"
+                    >setLabelClass</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$label_class</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$label_class</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set label_class</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="method_setLabelWidth"
+                >
+                  setLabelWidth()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setLabelWidth"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">219</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Set the value of label_width
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name"
+                    >setLabelWidth</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >int&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$label_width</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$label_width</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >int</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set label_width</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_setName">
+                  setName()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setName"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">182</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">Set the value of name</p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">setName</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$name</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$name</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set name</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_setTooltip">
+                  setTooltip()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setTooltip"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">255</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">Set the value of tooltip</p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">setTooltip</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >array&lt;string|int, mixed&gt;&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$tooltip</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >self</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$tooltip</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >array&lt;string|int, mixed&gt;</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Array representing a tooltip</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">self</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -public">
+                <h4 class="phpdocumentor-element__name" id="method_setValue">
+                  setValue()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_setValue"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">141</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Sets value of input element HTML
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >public</span
+                  >
+                  <span class="phpdocumentor-signature__name">setValue</span
+                  ><span>(</span
+                  ><span class="phpdocumentor-signature__argument"
+                    ><span
+                      class="phpdocumentor-signature__argument__return-type"
+                      >string|null&nbsp;</span
+                    ><span class="phpdocumentor-signature__argument__name"
+                      >$value</span
+                    ></span
+                  ><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >void</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+                <dl class="phpdocumentor-argument-list">
+                  <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name"
+                      >$value</span
+                    >
+                    :
+                    <span class="phpdocumentor-signature__argument__return-type"
+                      >string|null</span
+                    >
+                  </dt>
+                  <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description">
+                      <p>Value to set to input</p>
+                    </section>
+                  </dd>
+                </dl>
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type">void</span>
+                &mdash;
+              </article>
+              <article class="phpdocumentor-element -method -protected">
+                <h4
+                  class="phpdocumentor-element__name"
+                  id="method_getTooltipHtml"
+                >
+                  getTooltipHtml()
+                  <a
+                    href="classes/App-Libraries-Formify-Inputs-Input.html#method_getTooltipHtml"
+                    class="headerlink"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </h4>
+                <aside class="phpdocumentor-element-found-in">
+                  <abbr
+                    class="phpdocumentor-element-found-in__file"
+                    title="Formify/Inputs/Input.php"
+                    ><a href="files/formify-inputs-input.html"
+                      ><abbr title="Formify/Inputs/Input.php"
+                        >Input.php</abbr
+                      ></a
+                    ></abbr
+                  >
+                  :
+                  <span class="phpdocumentor-element-found-in__line">164</span>
+                </aside>
+
+                <p class="phpdocumentor-summary">
+                  Gets tooltip HTML according to $tooltip array
+                </p>
+
+                <code class="phpdocumentor-code phpdocumentor-signature">
+                  <span class="phpdocumentor-signature__visibility"
+                    >protected</span
+                  >
+                  <span class="phpdocumentor-signature__name"
+                    >getTooltipHtml</span
+                  ><span>(</span><span>)</span><span> : </span
+                  ><span class="phpdocumentor-signature__response_type"
+                    >string</span
+                  ></code
+                >
+
+                <h5 class="phpdocumentor-return-value__heading">
+                  Return values
+                </h5>
+                <span class="phpdocumentor-signature__response_type"
+                  >string</span
+                >
+                &mdash;
+                <section class="phpdocumentor-description">
+                  <p>HTML of tooltip defined</p>
+                </section>
+              </article>
             </section>
 
-        
-    <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+            <script type="text/javascript">
+              function loadExternalCodeSnippets(line) {
+                Array.prototype.slice
+                  .call(document.querySelectorAll("pre[data-src]"))
+                  .forEach((pre) => {
+                    var src = pre.getAttribute("data-src").replace(/\\/g, "/");
+                    var extension = (src.match(/\.(\w+)$/) || [, ""])[1];
+                    var language = "php";
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    var code = document.createElement("code");
+                    code.className = "language-" + language;
 
-                pre.textContent = '';
+                    pre.textContent = "";
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    pre.setAttribute("data-line", line);
+                    code.textContent = "Loading…";
 
-                pre.appendChild(code);
+                    pre.appendChild(code);
 
-                var xhr = new XMLHttpRequest();
+                    var xhr = new XMLHttpRequest();
 
-                xhr.open('GET', src, true);
+                    xhr.open("GET", src, true);
 
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
-
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState == 4) {
                         if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
+                          code.textContent = xhr.responseText;
 
-                            Prism.highlightElement(code);
+                          Prism.highlightElement(code);
+                        } else if (xhr.status >= 400) {
+                          code.textContent =
+                            "✖ Error " +
+                            xhr.status +
+                            " while fetching file: " +
+                            xhr.statusText;
+                        } else {
+                          code.textContent =
+                            "✖ Error: File does not exist, is empty or trying to view from localhost";
                         }
-                        else if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                        }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
-                    }
-                };
+                      }
+                    };
 
-                xhr.send(null);
-            });
-        }
+                    xhr.send(null);
+                  });
+              }
 
-        var modals = document.querySelectorAll("[data-modal]");
+              var modals = document.querySelectorAll("[data-modal]");
 
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
+              modals.forEach(function (trigger) {
+                trigger.addEventListener("click", function (event) {
+                  //event.preventDefault();
+                  const modal = document.getElementById(trigger.dataset.modal);
+                  modal.classList.add("phpdocumentor-modal__open");
+                  loadExternalCodeSnippets(trigger.dataset.line);
+                  const exits = modal.querySelectorAll("[data-exit-button]");
+                  exits.forEach(function (exit) {
                     exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                      event.preventDefault();
+                      modal.classList.remove("phpdocumentor-modal__open");
                     });
+                  });
                 });
-            });
-        });
-    </script>
-
-    </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-    <section class="phpdocumentor-search-results__dialog">
-        <header class="phpdocumentor-search-results__header">
-            <h2 class="phpdocumentor-search-results__title">Search results</h2>
-            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
-        </header>
-        <section class="phpdocumentor-search-results__body">
-            <ul class="phpdocumentor-search-results__entries"></ul>
-        </section>
-    </section>
-</section>
-            </div>
+              });
+            </script>
+          </article>
+          <section
+            data-search-results
+            class="phpdocumentor-search-results phpdocumentor-search-results--hidden"
+          >
+            <section class="phpdocumentor-search-results__dialog">
+              <header class="phpdocumentor-search-results__header">
+                <h2 class="phpdocumentor-search-results__title">
+                  Search results
+                </h2>
+                <button class="phpdocumentor-search-results__close">
+                  <i class="fas fa-times"></i>
+                </button>
+              </header>
+              <section class="phpdocumentor-search-results__body">
+                <ul class="phpdocumentor-search-results__entries"></ul>
+              </section>
+            </section>
+          </section>
         </div>
-        <a href="classes/App-Libraries-Formify-Inputs-TextField.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
-
+      </div>
+      <a
+        href="classes/App-Libraries-Formify-Inputs-TextField.html#top"
+        class="phpdocumentor-back-to-top"
+        ><i class="fas fa-chevron-circle-up"></i
+      ></a>
     </main>
 
     <script>
-        cssVars({});
+      cssVars({});
     </script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
-</body>
+  </body>
 </html>
